@@ -1,0 +1,57 @@
+.form
+    margin-bottom: 2.4rem
+    &__group
+        position: relative
+        width: 80%
+        
+        &:not(:last-child )
+            margin-bottom: 2rem 
+    &__input
+        border: none
+        width: 100%
+        position: relative
+        display: block
+        border-bottom: 1px solid $black
+        &:focus
+            outline: none
+            border-bottom: 1px solid $grey-light
+        &:focus:invalid
+            border-bottom: 1px solid $red-light
+
+
+    &__label
+        display: block
+        position: relative
+        top: 0 
+        width: 100%
+        
+        
+        
+        span
+            position: absolute
+            top: 0
+            transition: .5s all
+            font-size: 1.6rem
+            transform: translateY(-1rem)
+            
+        input:focus + span,
+        input:valid + span
+            transform: translateY(-2.2rem)
+            font-size: 1.2rem 
+            
+    &__input
+        transform: translateY(-1rem)
+        padding-bottom: 1.25rem 
+        padding-top: .5rem
+
+            
+            
+
+
+        
+        
+
+
+           
+
+

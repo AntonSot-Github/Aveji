@@ -1,0 +1,29 @@
+header
+    display: grid
+    grid-template-columns: 3fr 2fr
+    margin-bottom: 4rem 
+    a
+        text-transform: uppercase
+        text-decoration: none
+        text-underline-offset: .4rem
+        align-self: end 
+        justify-self: end
+        position: relative
+        transition: .3s
+        &::before
+            content: ""
+            position: absolute
+            bottom: -0.4rem
+            background: $black
+            height: .2rem
+            width: 100%
+            transform: scaleX(0)
+            transition: .3s
+        &:hover            
+            opacity: 20%
+        &:hover::before
+            transform: scaleX(1)
+            background: $grey-light
+            
+            
+

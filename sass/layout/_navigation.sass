@@ -1,0 +1,36 @@
+.navigation
+    margin-bottom: 4rem
+    display: grid
+    grid-template-columns: 3fr 1fr 1fr
+    ul
+        list-style: none
+        line-height: 3.5rem 
+        li
+            a
+                position: relative
+                text-decoration: none
+                color: $black 
+                &::before
+                    content: ""
+                    position: absolute
+                    right: 0
+                    bottom: -0.2rem
+                    width: 0
+                    height: 0.1rem
+                    background-color: $black
+                    transition: .3s                    
+                &:hover:before
+                    width: 100%
+                    left: 0
+
+
+    p
+        justify-self: end 
+
+    
+    &__logo
+        display: inline-block
+        width: 7rem
+        height: 7.4rem
+        align-self: start 
+
