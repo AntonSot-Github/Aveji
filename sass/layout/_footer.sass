@@ -1,0 +1,16 @@
+.footer
+    &__box
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+    &__middle-part
+        justify-self: center
+        align-self: center
+    &__right-part
+        justify-self: end 
+        align-self: center
+        ul
+            list-style: none
+            display: flex
+            li
+                &:not(:last-child)
+                    margin-right: 4rem
