@@ -60,23 +60,22 @@ td
         grid-template-columns: repeat(auto-fit, minmax(34rem, 1fr))
         grid-gap: 2rem 
 
-.section-reviews
-    display: grid
-    grid-template-rows: min-content 1fr
+.section-reviews    
     h2
         margin-bottom: 3.2rem
     &__box
         display: grid
-        grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr))
-
+        grid-template-columns: repeat(auto-fit, minmax(min(34rem, 100%), 1fr))
         grid-gap: 2rem 
+        align-items: stretch
 
 .review
+    justify-items: center
     text-align: center
+    align-items: stretch
     padding: 5rem
     padding-bottom: 15%
     border: 1px solid $black
-
     img
         margin-bottom: 3.2rem
     h4
