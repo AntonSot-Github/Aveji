@@ -1,3 +1,5 @@
+
+@import "abstracts/_mixins"
 @import "variable.sass"
 @import "layout/_navigation.sass"
 @import "typography.sass"
@@ -9,6 +11,10 @@
 @import "components/_store-icons"
 @import "layout/_footer.sass"
 @import "abstracts/_link-underlining.sass"
+
+
+    
+
 
 @font-face 
     font-family: "helvetica-bolt" 
@@ -36,6 +42,12 @@ html
     color: $black
     transition: .5s all
     scroll-behavior: smooth 
+    @include respond(tab-land)
+        font-size: 56.25%
+    @include respond(tab-port)
+        font-size: 50%
+    @include respond(phone)
+        font-size: 43.75%
 
 body
     background-color: $white

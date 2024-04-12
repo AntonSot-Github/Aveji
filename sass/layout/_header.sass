@@ -2,6 +2,18 @@ header
     display: grid
     grid-template-columns: minmax(min-content, 3fr) minmax(min-content, 2fr)
     margin-bottom: 4rem 
+    @include respond(tab-port)
+        display: grid
+        grid-template-columns: none
+        grid-auto-rows: min-content min-content
+        justify-items: center
+        align-items: center
+    h1
+        @include respond(tab-port)
+            text-align: center
+            width: 80%
+        @include respond(phone)
+            width: 90%
     a
         text-transform: uppercase
         text-decoration: none
@@ -16,6 +28,8 @@ header
             opacity: 20%
         &:hover::before
             background: $grey-light
+        @include respond(tab-port)
+            justify-self: center
             
             
 
