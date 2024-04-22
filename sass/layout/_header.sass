@@ -8,6 +8,8 @@ header
         grid-auto-rows: min-content min-content
         justify-items: center
         align-items: center
+    @include respond(phone)
+        transition: all 2s
     h1
         @include respond(tab-port)
             text-align: center

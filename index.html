@@ -11,13 +11,14 @@
     <link rel="icon" type="image/png" sizes="32x32" href="icons/fav_icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="icons/fav_icons/favicon-16x16.png">
     <link rel="manifest" href="icons/fav_icons/site.webmanifest">
+    
 </head>
 <body>
 
     <div class="container">
         <div class="navigation">
             <img class="navigation__logo" src="img/logo.svg" alt="logo">
-            <nav class="nav-menu">GULP
+            <nav class="navigation__nav-menu ">
                 <ul>
                     <li><a class="link-underlining_left-to-right" href="#presentation">About us</a></li>
                     <li><a class="link-underlining_left-to-right" href="#projects">Projects</a></li>
@@ -26,6 +27,25 @@
                 </ul>
             </nav>
             <p>+4 999 999 99 99</p>
+            <div class="navigation-mobile navigation-mobile__box">
+                <div class="navigation-mobile__contant">
+                    <input type="checkbox" class="navigation-mobile__toggle" id="mini-nav-menu"> 
+                    <label for="mini-nav-menu" class="navigation-mobile__button">
+                        <span class="navigation-mobile__icon"></span>
+                    </label><!-- чекбокс дает возможность выбрать несколько из вариантов -->
+                    <div class="navigation-mobile__background"></div>
+                    <nav class="navigation-mobile__menu">
+                        <ul class="navigation-mobile__list">
+                            <li><a class="navigation-mobile__link" href="#presentation">About us</a></li>
+                            <li><a class="navigation-mobile__link" href="#projects">Projects</a></li>
+                            <li><a class="navigation-mobile__link" href="#">Materials</a></li>
+                            <li><a class="navigation-mobile__link" href="#reviews">Reviews</a></li>
+                        </ul>
+
+                    </nav>
+
+                </div>
+            </div>
         </div>
         <header>
             <h1>Exclusive and non-standard home furniture</h1>
@@ -216,7 +236,8 @@
                     </ul>
                 </div>
             </div>
-        </footer>
+        </footer>        
     </div>
+    <script src="js/script.js"></script>
 </body>
 </html>
