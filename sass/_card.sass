@@ -9,7 +9,8 @@
             margin-right: 1rem
     img
         transition: .7s all 
-        object-fit: scale-down
+        object-fit: cover 
+        width: 100%
         @include respond(tab-port)
             object-fit: contain
             width:32rem
@@ -28,8 +29,11 @@
         align-items: center
         p
             color: $white
-            font-size: 1.6rem
+            font-size: 2.5rem
             font-weight: 100
+        img
+            width: 2rem 
+            height: 2rem 
         @include respond(tab-port)
             display: none 
     &:hover

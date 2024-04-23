@@ -100,14 +100,14 @@ td
 
 .section-projects
     display: grid
-    grid-template-rows: min-content 1fr 
+    grid-template-rows: min-content min-content
     grid-row-gap: 3.2rem
     @include respond(tab-port)
         grid-template-rows: none
         
     &__cards
         display: grid
-        grid-template-columns: repeat(auto-fit, minmax(34rem, 1fr))
+        grid-template-columns: repeat(auto-fit, minmax(44rem, 1fr))
         grid-gap: 2rem 
         @include respond(tab-port) 
             display: flex 
